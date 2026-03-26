@@ -1,22 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BDG Lottery Color Prediction</title>
-    <meta name="description" content="BDG Lottery Color Prediction – register with your invitation code and predict colors in the BDG lottery game. Play smart and have fun!">
-    <link rel="stylesheet" href="/main/style.css">
-    <script src="/main/script.js" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BDG Predictor</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #0f172a;
+  color: white;
+  text-align: center;
+}
+
+header {
+  background: #1e293b;
+  padding: 15px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  background: #1e293b;
+  border-radius: 15px;
+}
+
+button {
+  padding: 15px 25px;
+  font-size: 16px;
+  background: #22c55e;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16a34a;
+}
+</style>
+
 </head>
 <body>
-    <header>
-        <img src="/images/logo.png" alt="BDG Logo" width="150">
-        <h1>Welcome to BDG Lottery</h1>
-    </header>
 
-    <main>
-        <p>Predict colors and play smart!</p>
-        <a class="join-button" href="/register?invitationCode=7858720480333">Join Now</a>
-    </main>
+<header>BDG Color Prediction</header>
+
+<div class="card">
+  <h2>Play Smart 🎯</h2>
+  <p>Predict colors and earn rewards</p>
+
+  <button onclick="go()">Join Now</button>
+</div>
+
+<script>
+function go(){
+  window.location.href = "/register?invitationCode=7858720480333";
+}
+</script>
+
 </body>
 </html>
