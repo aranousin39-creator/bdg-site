@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Register Page</h1>
+<p id="code">Loading...</p>
+
+<script>
+const urlParams = new URLSearchParams(window.location.search);
+const code = urlParams.get('invitationCode');
+document.getElementById('code').textContent = code || "No code";
+</script>
+
+</body>
+</html>
